@@ -1,3 +1,20 @@
+const data = [
+  {
+    firstName: "Ashton",
+    lastName: "Kutcher",
+    age: 40,
+  },
+  {
+    firstName: "Bradley",
+    lastName: "Pitt",
+    age: 54,
+  },
+  {
+    firstName: "Hannah",
+    lastName: "Dakota",
+    age: 24,
+  },
+];
 let flag = true;
 
 let user = prompt("Ваше имя?:", "");
@@ -8,7 +25,7 @@ for (let index = 0; index < data.length; index++) {
   if (
     user === data[index].firstName.toUpperCase() ||
     user === data[index].firstName.toLowerCase() ||
-    user === data[index].firstName.codePointAt()
+    user === data[index].firstName
   ) {
     flag = false;
     alert(`Ваше имя: ${data[index].firstName}
