@@ -23,9 +23,8 @@ let user = prompt("Ваше имя?:", "");
 for (let index = 0; index < data.length; index++) {
   //   debugger;
   if (
-    user === data[index].firstName.toUpperCase() ||
-    user === data[index].firstName.toLowerCase() ||
-    user === data[index].firstName
+    user.toUpperCase() === data[index].firstName.toUpperCase()
+    // user === data[index].firstName
   ) {
     flag = false;
     alert(`Ваше имя: ${data[index].firstName}
